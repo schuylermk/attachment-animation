@@ -1,0 +1,33 @@
+svg {
+  transform: scale(4);
+  transform-origin: left top;
+
+  .document-container {
+    transform: rotate(2deg);
+    transform-origin: center center;
+    transition: all .4s ease;
+  }
+  .photo-1 {
+    transform: rotate(-2deg);
+    transform-origin: center center;
+    transition: all .9s ease;
+  }
+  .photo-2 {
+    transform: rotate(-5deg);
+    transform-origin: center center;
+    transition: all 1.4s ease;
+  }
+
+  /* Hover State */
+  .attachments-export:hover {
+    .document-container {
+      transform: translate(-2.99px,-2.77px) rotate(5deg);
+    }
+    .photo-1 {
+      transform: translate(6.56px,2.22px) rotate(-10deg);
+    }
+    .photo-2 {
+      transform: translate(6.1px,-8.55px) rotate(-20deg);
+    }
+  }
+}
